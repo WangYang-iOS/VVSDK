@@ -233,8 +233,7 @@ typedef void (^NetworkResponseCallback)(VVResponseMessage *responseMessage);
             manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain",@"text/json",@"text/javascript",@"application/json", nil];
             [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-            NSMutableDictionary * params = @{@"channel":@"",
-                                             @"deviceId":@""}.mutableCopy;
+            NSMutableDictionary * params = @{}.mutableCopy;
             if (message.args) {
                 [params setValuesForKeysWithDictionary:message.args];
             }
@@ -258,8 +257,7 @@ typedef void (^NetworkResponseCallback)(VVResponseMessage *responseMessage);
         case GET:
         {
              manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain",@"text/json",@"text/javascript",@"application/json", nil];
-            NSMutableDictionary * params = @{@"channel":@"",
-                                             @"deviceId":@""}.mutableCopy;
+            NSMutableDictionary * params = @{}.mutableCopy;
             if (message.args) {
                 [params setValuesForKeysWithDictionary:message.args];
             }

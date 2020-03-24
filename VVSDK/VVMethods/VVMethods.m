@@ -90,7 +90,7 @@
  @return return value description
  */
 + (UIViewController*)vv_topViewController {
-    return [self vv_topViewControllerWithRootViewController:[self vv_keyWindow].rootViewController];
+    return [self vv_topViewControllerWithRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
 }
 
 + (UIViewController*)vv_topViewControllerWithRootViewController:(UIViewController*)rootViewController {

@@ -45,16 +45,17 @@
         [array addObject:nav];
         // 设置标题样式
         [nav.tabBarItem setTitleTextAttributes:
-         [NSDictionary dictionaryWithObjectsAndKeys:[UIColor vv_colorWithHexString:@"d30005"],
+         [NSDictionary dictionaryWithObjectsAndKeys:[UIColor vv_colorWithHexString:@"FF4500"],
           NSForegroundColorAttributeName,
           [UIFont fontWithName:@"ProximaNova-Semibold" size:0.0],
           NSFontAttributeName,
           nil]
                                       forState:UIControlStateSelected];
+        [nav setNavigationBarBackgroundColor:[UIColor vv_colorWithHexString:@"FF4500"] titleColor:[UIColor vv_colorWithHexString:@"FFFFFF"] titleFont:VVBFONT(17)];
     }
     
     self.viewControllers = array;
-    self.tabBar.barTintColor = [UIColor whiteColor];
+//    self.tabBar.barTintColor = [UIColor clearColor];
 }
 
 

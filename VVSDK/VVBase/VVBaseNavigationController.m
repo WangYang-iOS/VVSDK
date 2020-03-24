@@ -7,6 +7,8 @@
 //
 
 #import "VVBaseNavigationController.h"
+#import "UIColor+vvExtension.h"
+#import "UIImage+vvExtension.h"
 
 @interface VVBaseNavigationController ()<UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
@@ -32,7 +34,6 @@
     [self.navigationBar setShadowImage:[UIImage new]];
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:titleColor,NSFontAttributeName:titleFont};
     self.navigationBar.tintColor = titleColor;
-    
 }
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
